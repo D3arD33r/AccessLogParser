@@ -9,10 +9,7 @@ public class Main {
 
         while (true) {
 
-
-
             String path = new Scanner(System.in).nextLine();
-
 
             try { // начало большого цикла try-catch
 
