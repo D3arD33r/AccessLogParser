@@ -29,7 +29,7 @@ public class Main {
                     int length = line.length();// длинка строки
 
                     if(length >1024)
-                    {throw new LongStringException("Ошибка в строке " +countLines +" длина строке = " + length);} //ошибка в строке с символами >1024
+                    {throw new RuntimeException("Ошибка в строке " +countLines +" длина строке = " + length);} //ошибка в строке с символами >1024
 
 
                     System.out.println("Длина строки: " + length);
@@ -59,8 +59,9 @@ public class Main {
                 ex.printStackTrace();
 
 
-        } catch (LongStringException ex) {
-               ex.printStackTrace();
+        } catch (RuntimeException ex) {
+                System.out.println(ex);
+                ex.printStackTrace();
             }
         }
     }
