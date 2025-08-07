@@ -25,8 +25,9 @@ public class Main {
 
                     int length = line.length();// длинка строки
 
-                    if(length >1024)
-                    {throw new RuntimeException("Ошибка в строке " +countLines +" длина строке = " + length);} //ошибка в строке с символами >1024
+                    if (length > 1024) {
+                        throw new RuntimeException("Ошибка в строке " + countLines + " длина строке = " + length);
+                    } //ошибка в строке с символами >1024
 
 
                     System.out.println("Длина строки: " + length);
@@ -46,19 +47,13 @@ public class Main {
                 System.out.println("Минимальная длина строки: " + min);
                 System.out.println("Масксимальная длина строки: " + max);
 
-            }
-            catch (FileNotFoundException  ex)
-            {System.out.println("Файл не существует или это папка");
+            } catch (FileNotFoundException ex) {
+                System.out.println("Файл не существует или это папка");
                 ex.printStackTrace();
-            }
-            catch (IOException ex) {
+            } catch (IOException ex) {
                 System.out.println("Ошибка чтения");
                 ex.printStackTrace();
 
-
-        } catch (RuntimeException ex) {
-                System.out.println(ex);
-                ex.printStackTrace();
             }
         }
     }
