@@ -59,10 +59,7 @@ public class Main {
                 ex.printStackTrace();
 
 
-        } catch (RuntimeException ex) {
-                System.out.println(ex);
-                ex.printStackTrace();
-            }
+        }
         }
     }
 }
