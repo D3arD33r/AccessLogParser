@@ -50,9 +50,7 @@ public class Main {
                     String fragment = parts[1].trim(); // Убирает пробелы: " Android" → "Android"
                     String botName = fragment.split("/")[0]; // Делит по '/' и берёт первый элемент
 
-                    // Сравнение через hashCode() и equals()
-
-
+                    // Сравнение через equals() без учёта регистра
                     if (botName.equalsIgnoreCase(GOOGLEBOT)) {
                         googlebotCount++;
                     }
